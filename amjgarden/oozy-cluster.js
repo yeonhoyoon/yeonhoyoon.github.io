@@ -1,11 +1,15 @@
 var image = document.getElementById("myImage");
-var x = 0;
-var y = 0;
+var x = (window.innerWidth - image.width) / 2;
+var y = (window.innerHeight - image.height) / 2;
 var xVelocity = 0;
 var yVelocity = 0;
 var screenWidth = window.innerWidth;
 var screenHeight = window.innerHeight;
 var isMoving = false;
+
+image.style.left = x + "px";
+image.style.top = y + "px";
+
 
 function moveImage() {
   x += xVelocity;
