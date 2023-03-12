@@ -38,7 +38,7 @@ function animate() {
 
   // Rotate the circle
   if (rotate) {
-    angle += 0.00001;
+    angle += 0.0001;
     ctx.translate(centerX, centerY);
     ctx.rotate(angle);
     ctx.translate(-centerX, -centerY);
